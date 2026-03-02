@@ -21,12 +21,13 @@ public class SumSquares {
         System.out.print("Please enter the end value: ");
         int endNum = in.nextInt();
         int squaretotal = 0;
+        int i = startNum;
         System.out.println("Sum of sequence of squares from " + startNum + " to " + endNum);
-        for (int i = startNum; i <= endNum; i++) {
+        while (i <= endNum) {
             int square = i * i;
-            squaretotal = square + squaretotal;
+            squaretotal += square;
             //System.out.print(squaretotal + " ");
-            
+            i++;
         }
         System.out.println(squaretotal);
     }
