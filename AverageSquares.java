@@ -23,12 +23,13 @@ public class AverageSquares {
         double squaretotal = 0;
         int i = startNum;
         System.out.println("Average of squares from " + startNum + " to " + endNum);
-        while (i <= endNum) {
+        do {
             int square = i * i;
             squaretotal += square;
             //System.out.print(squaretotal + " ");
             i++;
         }
+        while (i <= endNum);
         double totalNum = endNum - startNum + 1;
         double average = squaretotal / totalNum;
         System.out.println(average);
